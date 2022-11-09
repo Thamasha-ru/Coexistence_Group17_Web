@@ -1,6 +1,6 @@
 .map {
     height: 500px;
-    background-color: white;
+    background-color: rgb(237, 227, 227);
     padding: 1rem;
     border-radius: 20px;
     margin-top: 16px;
@@ -20,7 +20,7 @@
   .info-name {
     font-size: 20px;
     font-weight: bold;
-    color: #555;
+    color: rgb(59, 34, 170);
   }
   
   .info-container {
