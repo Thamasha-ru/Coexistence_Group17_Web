@@ -16,6 +16,10 @@ import Map from "./Map";
 import "leaflet/dist/leaflet.css";
 
 
+
+
+
+
 const App = () => {
   const [country, setInputCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
@@ -72,8 +76,13 @@ const App = () => {
       });
   };
 
-  return (
-    <div className="app">
+  return (  <>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div><div className="app">
       <div className="app__left">
         <div className="app__header">
           <h1>COVID-19 Tracker</h1>
@@ -97,30 +106,26 @@ const App = () => {
             isRed
             active={casesType === "cases"}
             cases={prettyPrintStat(countryInfo.todayCases)}
-            total={numeral(countryInfo.cases).format("0.0a")}
-          />
+            total={numeral(countryInfo.cases).format("0.0a")} />
           <InfoBox
             onClick={(e) => setCasesType("recovered")}
             title="Recovered"
             active={casesType === "recovered"}
             cases={prettyPrintStat(countryInfo.todayRecovered)}
-            total={numeral(countryInfo.recovered).format("0.0a")}
-          />
+            total={numeral(countryInfo.recovered).format("0.0a")} />
           <InfoBox
             onClick={(e) => setCasesType("deaths")}
             title="Deaths"
             isRed
             active={casesType === "deaths"}
             cases={prettyPrintStat(countryInfo.todayDeaths)}
-            total={numeral(countryInfo.deaths).format("0.0a")}
-          />
+            total={numeral(countryInfo.deaths).format("0.0a")} />
         </div>
         <Map
           countries={mapCountries}
           casesType={casesType}
           center={mapCenter}
-          zoom={mapZoom}
-        />
+          zoom={mapZoom} />
       </div>
       <Card className="app__right">
         <CardContent>
@@ -132,8 +137,9 @@ const App = () => {
           </div>
         </CardContent>
       </Card>
-    </div>
-  );
-};
+    </div></>
+        );
+        };
 
-export default App;
+        export default App;
+      
