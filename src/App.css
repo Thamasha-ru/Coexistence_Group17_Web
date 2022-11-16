@@ -25,7 +25,7 @@ body {
 }
 
 .app__header > h1 {
-  color: #fc3c3c;
+  color: #313185;
   font-size: 2rem;
 }
 
@@ -67,7 +67,7 @@ body {
   float: left;
   color: #111010;
   text-align: center;
-  padding: 40px 55px;
+  padding: 20px 30px;
   text-decoration: none;
   font-size: 17px;
 }

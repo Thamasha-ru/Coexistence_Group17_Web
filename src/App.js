@@ -81,12 +81,25 @@ const App = () => {
     <a class="active" href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-    <a href="#signup">Signup</a>
+    <a href="#services">Services</a>
     <a href="#login">Login</a>
-  </div><div className="app">
+  </div>
+
+  
+<div className="upper_image">
+
+
+
+
+</div>
+
+
+
+  <div className="app">
       <div className="app__left">
         <div className="app__header">
-          <h1>COVID-19 Tracker</h1>
+
+          <h1>Prevent From Covid-19</h1>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
